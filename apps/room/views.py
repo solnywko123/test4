@@ -1,4 +1,3 @@
-from rest_framework import generics
 from .models import Room
 from .serializers import RoomSerializer
 from rest_framework.filters import SearchFilter
@@ -11,8 +10,3 @@ class RoomViewSet(ModelViewSet):
     serializer_class = RoomSerializer
     filter_backends = (SearchFilter, DjangoFilterBackend)
     filterset_fields = ('cost', 'capacity')
-
-
-
-
-

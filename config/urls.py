@@ -13,4 +13,4 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api/booking/', include('apps.booking.urls')),
     path('api/v1/account/', include('apps.account.urls')),
-]
+    ]

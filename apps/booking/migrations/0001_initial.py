@@ -18,11 +18,14 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Booking',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True,
+                                           primary_key=True, serialize=False, verbose_name='ID')),
                 ('start_date', models.DateField()),
                 ('end_date', models.DateField()),
-                ('room', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='room.room')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('room', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                           to='room.room')),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                           to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]

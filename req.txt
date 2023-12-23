@@ -1,7 +1,7 @@
-django
-psycopg2-binary
-djangorestframework
-python-decouple
-django-filter
-djangorestframework-simplejwt
-
+Django==3.2.8
+psycopg2-binary==2.9.1
+djangorestframework==3.12.4
+python-decouple==3.5
+django-filter==2.4.0
+djangorestframework-simplejwt==5.0.0
+flake8==6.1.0
